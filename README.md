@@ -17,13 +17,13 @@ The main configuration for LibGA is *GAconfig* and the rest is in the *configs* 
 
 The available instances are in the *instances* folder, but you can add any other instance you want. Be sure to add them in the header of the config file for the program to use.
 
-The code is divided into 3 different programmes:
+The code is divided into 3 different files:
 
-**GA Test:** which is the normal program for using LibGA and uses the configuration of the *GAconfig* file. It can be used with its bash file to automate the change of configurations with those in the *config* folder and perform 10 tests per configuration file. A .csv file is created with all results and also the individual results of each simulation are saved in a .txt.
+* **GA Test:** which is the normal program for using LibGA and uses the configuration of the *GAconfig* file. It can be used with its bash file to automate the change of configurations with those in the *config* folder and perform 10 tests per configuration file. A .csv file is created with all results and also the individual results of each simulation are saved in a .txt.
 
-**GA Test Report:** modification of GA Test in which only the *GAconfig* configuration is used. The value of *mu_rate* is progressively changed, with constant *x_rate*, and after *x_rate*, keeping *mu_rate* constant. It is recommended to use the bash script with the same name to perform the 20 repetitions (50 samples of each) automatically. A .csv file is created with the final results.
+* **GA Test Report:** modification of GA Test in which only the *GAconfig* configuration is used. The value of *mu_rate* is progressively changed, with constant *x_rate*, and after *x_rate*, keeping *mu_rate* constant. It is recommended to use the bash script with the same name to perform the 20 repetitions (50 samples of each) automatically. A .csv file is created with the final results.
 
-**GA Total Test:** exactly the same process as in GA Test Report but a simulation is performed by varying *mu_rate* and *x_rate* at the same time. In such a way that a 20x20 matrix is obtained with the best solution for each pair of *mu_rate* and *x_rate* values, which is saved in a .csv file. Example below for the instance p_hat300_1.
+* **GA Total Test:** exactly the same process as in GA Test Report but a simulation is performed by varying *mu_rate* and *x_rate* at the same time. In such a way that a 20x20 matrix is obtained with the best solution for each pair of *mu_rate* and *x_rate* values, which is saved in a .csv file. Example below for the instance p_hat300_1.
 
 ![](https://i.ibb.co/Kbbx81F/matrix.png)
 
