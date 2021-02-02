@@ -1,4 +1,4 @@
-# Project Title
+# IA - Genetic algorithms (LibGA)
 
 In this project, the LibGA library developed by Arthur L. Corcoran has been implemented to find the max clique of some common instances. It is considered an introductory project to genetic algorithms and is not intended to be overly complex or precise.
 
