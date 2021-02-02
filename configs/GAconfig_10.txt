@@ -1,0 +1,30 @@
+user_data ./instances/p_hat300-1.clq.txt
+function_index 1
+
+#############
+# GA config #
+#############
+rand_seed my_pid
+datatype bit
+initpool random01
+chrom_len 300
+pool_size 500
+stop_after 5000 use_convergence
+ga generational
+gap 0.3
+selection roulette
+bias 1.8
+crossover simple
+x_rate 0.6
+mutation simple_random
+mu_rate 0.9
+replacement append
+objective minimize
+elitism false
+
+##################
+# Report configs #
+##################
+rp_type short
+rp_interval 10
+rp_file raw_output.txt

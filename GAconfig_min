@@ -1,0 +1,29 @@
+user_data ./instances/Toy4.clq.txt
+
+#############
+# GA config #
+#############
+rand_seed my_pid
+datatype bit
+initpool random
+chrom_len 10
+pool_size 100
+stop_after 500 use_convergence
+ga generational
+gap 0.3
+selection roulette
+bias 1.1
+crossover simple
+x_rate 0.7
+mutation simple_invert
+mu_rate 0.9
+replacement append
+objective maximize
+elitism false
+
+##################
+# Report configs #
+##################
+rp_type short
+rp_interval 10
+rp_file ga.out

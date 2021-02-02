@@ -1,0 +1,30 @@
+user_data ./instances/johnson8-2-4.clq.txt
+function_index 1
+
+#############
+# GA config #
+#############
+rand_seed my_pid
+datatype bit
+initpool random01
+chrom_len 28
+pool_size 20
+stop_after 500 use_convergence
+ga generational
+gap 0.3
+selection roulette
+bias 1.1
+crossover simple
+x_rate 0.7
+mutation simple_invert
+mu_rate 0.9
+replacement append
+objective minimize
+elitism false
+
+##################
+# Report configs #
+##################
+rp_type short
+rp_interval 10
+rp_file raw_output.txt
